@@ -9,7 +9,7 @@ const Services = () => {
   console.log(services);
 
   useEffect(() => {
-    fetch("http://localhost:4030/services")
+    fetch("https://floating-gorge-61503.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

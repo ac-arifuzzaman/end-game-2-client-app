@@ -11,8 +11,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import React from "react";
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
+const pages = ["Doctors", "Services", "Blog"];
+const settings = ["Profile", "Account", "Dashboard", "Logout", "login"];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,7 +42,12 @@ const Header = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+              sx={{
+                mr: 2,
+                color: "red",
+                fontWeight: "bold",
+                display: { xs: "none", md: "flex" },
+              }}
             >
               LOGO
             </Typography>
@@ -89,7 +95,12 @@ const Header = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+              sx={{
+                flexGrow: 1,
+                color: "red",
+                fontWeight: "bold",
+                display: { xs: "flex", md: "none" },
+              }}
             >
               LOGO
             </Typography>
